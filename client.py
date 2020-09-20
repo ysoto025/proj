@@ -21,12 +21,7 @@ accio = ""
 
 self.sock.recv(5).decode("utf-8")
 
-while True:
-
-   send = file.read(2048)
-   if len(send) < 1:
-       break
-   sock.send(send)
+sock.send(file)
 
 file.close()
 
